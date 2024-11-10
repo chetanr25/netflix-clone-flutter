@@ -32,14 +32,8 @@ A modern Netflix-style movie browsing application built with Flutter and Riverpo
 
 ---
 
-## Demo Video (This may take time to load)
-
-<div align="center">
-  <video width="50%" controls>
-    <source src="assets/screenshots/demo.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+## Demo Video 
+https://github.com/user-attachments/assets/7c0ffe77-8c44-4a09-8010-b1a63edf435c
 
 ---
 
