@@ -21,11 +21,23 @@ class HomeScreen extends ConsumerWidget {
         ),
         moviesAsync.when(
           data: (movies) => MovieGrid(movies: movies),
-          loading: () => const SliverFillRemaining(
+          loading: () => SliverFillRemaining(
             child: Center(child: CircularProgressIndicator()),
           ),
           error: (error, stack) => SliverFillRemaining(
-            child: Center(child: Text('Error: $error')),
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text(
+                  "Please enable internet connection and restart the app",
+                  style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
           ),
         ),
       ],
