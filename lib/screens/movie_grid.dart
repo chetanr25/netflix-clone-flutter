@@ -10,11 +10,23 @@ class MovieGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    var crossAxisCount = 0;
+    if (width < 600) {
+      crossAxisCount = 2;
+    } else if (width < 800) {
+      crossAxisCount = 3;
+    } else if (width < 1200) {
+      crossAxisCount = 4;
+    } else {
+      crossAxisCount = 5;
+    }
+
     return SliverPadding(
       padding: const EdgeInsets.all(16),
       sliver: SliverGrid(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: crossAxisCount,
           childAspectRatio: 0.7,
           crossAxisSpacing: 16,
           mainAxisSpacing: 16,

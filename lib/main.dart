@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 import 'package:quadb/screens/splash_screen.dart';
 
@@ -22,7 +22,7 @@ class MovieApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Movie App',
         theme: ThemeData(
-          primaryTextTheme: GoogleFonts.exo2TextTheme(),
+          // primaryTextTheme: GoogleFonts.exo2TextTheme(),
           primarySwatch: Colors.red,
           scaffoldBackgroundColor: Colors.black,
           textTheme: const TextTheme(
