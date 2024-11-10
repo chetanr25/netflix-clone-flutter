@@ -22,14 +22,18 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FlutterLogo(size: 150),
-            SizedBox(height: 20),
-            CircularProgressIndicator(color: Colors.red),
+            Image.asset(
+              'assets/netflix.gif',
+              // width: 600,
+              height: 500,
+            ),
+            const SizedBox(height: 20),
+            const CircularProgressIndicator(color: Colors.red),
           ],
         ),
       ),

@@ -10,11 +10,11 @@ class SearchScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final searchResultsAsync = ref.watch(searchResultsProvider);
-    final focusNode = FocusNode();
+    final focusNode = ref.watch(searchFocusNodeProvider);
 
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      focusNode.requestFocus();
-    });
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   focusNode.requestFocus();
+    // });
 
     return Column(
       children: [

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:quadb/models/movies.dart';
 
@@ -21,8 +22,8 @@ class MovieCard extends StatelessWidget {
               borderRadius:
                   const BorderRadius.vertical(top: Radius.circular(8)),
               child: movie.imageUrl != null
-                  ? Image.network(
-                      movie.imageUrl!,
+                  ? CachedNetworkImage(
+                      imageUrl: movie.imageUrl!,
                       fit: BoxFit.cover,
                       width: double.infinity,
                     )
