@@ -6,7 +6,7 @@ A modern Netflix-style movie browsing application built with Flutter and Riverpo
 
 ### Download APK
 
-<a href="https://github.com/chetan25/netflix-clone-flutter/raw/refs/heads/main/asset/apk/app-release.apk">
+<a href="https://github.com/chetanr25/netflix-clone-flutter/raw/refs/heads/main/assets/apk/app-release.apk">
 <img src="https://camo.githubusercontent.com/2b0b605d77141fd0ff5f5aa8159f6121c4d4bd213d5ee2aba1753d678faaf28c/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67" width=350/>
 </a>
 
