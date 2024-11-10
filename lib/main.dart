@@ -443,6 +443,7 @@ class MovieApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Movie App',
         theme: ThemeData(
           primarySwatch: Colors.red,

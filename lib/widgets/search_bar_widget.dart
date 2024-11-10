@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:quadb/providers/providers.dart';
 import 'package:quadb/screens/main_screen.dart';
 
 class SearchBarWidget extends ConsumerWidget {
@@ -9,6 +10,7 @@ class SearchBarWidget extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return GestureDetector(
         onTap: () {
+          ref.watch(searchFocusNodeProvider).requestFocus();
           ref.read(selectedIndexProvider.notifier).state = 1;
         },
         child: Container(

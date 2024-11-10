@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:quadb/models/movies.dart';
 
@@ -16,8 +17,8 @@ class DetailsScreen extends StatelessWidget {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: movie.originalImageUrl != null
-                  ? Image.network(
-                      movie.originalImageUrl!,
+                  ? CachedNetworkImage(
+                      imageUrl: movie.originalImageUrl!,
                       fit: BoxFit.cover,
                     )
                   : Container(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:quadb/providers/providers.dart';
 import 'package:quadb/screens/home_screen.dart';
 import 'package:quadb/screens/search_screen.dart';
 
@@ -25,8 +26,12 @@ class MainScreen extends ConsumerWidget {
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.grey,
         currentIndex: selectedIndex,
-        onTap: (index) =>
-            ref.read(selectedIndexProvider.notifier).state = index,
+        onTap: (index) {
+          if (index == 1) {
+            ref.read(searchFocusNodeProvider).requestFocus();
+          }
+          ref.read(selectedIndexProvider.notifier).state = index;
+        },
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
