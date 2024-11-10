@@ -26,6 +26,11 @@ class MovieCard extends StatelessWidget {
                       imageUrl: movie.imageUrl!,
                       fit: BoxFit.cover,
                       width: double.infinity,
+                      errorWidget: (context, url, error) => const Icon(
+                        Icons.movie,
+                        size: 100,
+                        color: Colors.red,
+                      ),
                     )
                   : Container(
                       color: Colors.grey[800],

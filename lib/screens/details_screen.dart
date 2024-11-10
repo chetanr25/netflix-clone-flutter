@@ -13,13 +13,18 @@ class DetailsScreen extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            expandedHeight: 300,
+            expandedHeight: 500,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: movie.originalImageUrl != null
                   ? CachedNetworkImage(
                       imageUrl: movie.originalImageUrl!,
                       fit: BoxFit.cover,
+                      errorWidget: (context, url, error) => const Icon(
+                        Icons.movie,
+                        size: 100,
+                        color: Colors.red,
+                      ),
                     )
                   : Container(
                       color: Colors.grey[800],
