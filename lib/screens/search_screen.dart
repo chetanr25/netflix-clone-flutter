@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:quadb/screens/main_screen.dart';
 import 'package:quadb/screens/movie_grid.dart';
-import '../providers/providers.dart';
+import 'package:quadb/providers/providers.dart';
 
 class SearchScreen extends ConsumerWidget {
   const SearchScreen({Key? key}) : super(key: key);
