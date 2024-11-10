@@ -12,6 +12,37 @@ A modern Netflix-style movie browsing application built with Flutter and Riverpo
 
 ---
 
+
+## Screenshots
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="assets/screenshots/splash_screen.PNG" width="200"/><br/>Splash Screen</td>
+    <td align="center"><img src="assets/screenshots/home_loading_screen.PNG" width="200"/><br/>Home Loading Screen</td>
+    <td align="center"><img src="assets/screenshots/home_screen.PNG" width="200"/><br/>Home Screen</td>
+    <td align="center"><img src="assets/screenshots/details_screen.PNG" width="200"/><br/>Details Screen</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/screenshots/search_loading_screen.PNG" width="200"/><br/>Search Loading Screen</td>
+    <td align="center"><img src="assets/screenshots/search_screen.jpeg" width="200"/><br/>Search Screen</td>
+    <td align="center"><img src="assets/screenshots/search_screen_result.PNG" width="200"/><br/>Search screen results</td>
+    <td align="center"><img src="assets/screenshots/no_internet_error_screen.PNG" width="200"/><br/>Error handling</td>
+  </tr>
+</table>
+
+---
+
+## Demo Video (This may take time to load)
+
+<div align="center">
+  <video width="50%" controls>
+    <source src="assets/screenshots/demo.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+---
+
 ## Features
 
 - 🎬 Browse movies from TVMaze API
