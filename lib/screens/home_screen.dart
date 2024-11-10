@@ -24,21 +24,25 @@ class HomeScreen extends ConsumerWidget {
           loading: () => SliverFillRemaining(
             child: Center(child: CircularProgressIndicator()),
           ),
-          error: (error, stack) => SliverFillRemaining(
-            child: Center(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Text(
-                  "Please enable internet connection and restart the app",
-                  style: TextStyle(
-                      color: Colors.red,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
+          error: (error, stack) {
+            // print("Error: $error");
+            // print(stack.toString());
+            return const SliverFillRemaining(
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text(
+                    "Please enable internet connection and restart the app",
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
-            ),
-          ),
+            );
+          },
         ),
       ],
     );
