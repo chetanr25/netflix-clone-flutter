@@ -16,7 +16,6 @@ A modern Netflix-style movie browsing application built with Flutter and Riverpo
 
 ---
 
-![vercel](https://github.com/user-attachments/assets/89ae37d2-353f-4ae4-8860-a688a6afa30a)
 
 ## Screenshots
 
